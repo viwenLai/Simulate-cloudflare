@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Second Page</title>
+
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="SecondWeb.css">
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+
+  <div id="fstep" style="position: relative; height: 88%; width: 100%; background: linear-gradient(20deg, rgba(128,125,185,1), rgba(119,195,226,1))">
+    <nav id="fnav" class="navbar navbar-default navbar-fixed-top" style="height: 80px; background-color: rgba(0,0,0,0); border-style: none">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" style="height: 77px; margin-left: 0; margin-right: 15px">
+            <img id="nimg" alt="Brand" src="logo-cloudflare.svg" height="50"></img>
+          </a>
+          <button id="nbut" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="nitem dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Products<span class="caret"></span></a>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="nitem dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Resources<span class="caret"></span></a>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="nitem dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Apps<span class="caret"></span></a>
+            </li>
+
+            <li><a href="#" class="nitem">Developers</a></li>
+            <li><a href="#" class="nitem">Plans</a></li>
+            <li><a href="#" class="nitem">Sales 1-888-993-5273</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="nitem">Help</a></li>
+            <li><a href="#" class="nitem">Under Attack?</a></li>
+            <li><a href="#" class="nitem">Log In</a></li>
+            <li><button id="headBtn" type="button" class="btn btn-default" style="background-color: rgba(0,0,0,0); color: rgba(255,255,255,1);
+               border: 1px solid rgba(255,255,255,1); padding-left: 20px; padding-right: 20px;
+               margin-top: 25px; margin-left: 10px; margin-right: 20px">Sign Up</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="ftitle" style="color: rgba(255,255,255,1)">
+      <h1>Cloudflare makes your </h1>
+      <h1 id="spe"></h1>
+      <h1> faster & safer</h1>
+    </div>
+
+    <div style="position: relative; top: 70%; text-align: center; color: rgba(255,255,255,1)">
+      <span><img src="play-small.svg" height="45" style="position: relative; bottom: 3px"></img></span>
+      <h4 style="display: inline">Learn how Cloudflare works</h4>
+    </div>
+  </div>
+
+  <div id="sgnav" style="height: 20%; background: linear-gradient(90deg, rgba(166,162,205,1), rgba(164,189,221,1))">
+    <form id="sgnform" role="form" style="position: relative; top: 35%">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-2 col-md-offset-1">
+            <div id="sgbfl" class="form-group">
+              <label style="position: relative; top: 4px; font-size: 18px; color: rgba(255,255,255,1)">Get Started Today</label>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-3">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Email*">
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-3">
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password*">
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-3">
+            <div id="signupbutton" class="form-group">
+              <sgup-button id="sbutton" v-bind:style="sgbstyle"></sgup-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div id="expt" class="explaintext">
+      <a>By clicking'Sign-up',I agree to </a>
+      <a class="spetext" href="#">Cloudflare's terms and conditions </a>
+      <a>and </a>
+      <a class="spetext" href="#">privacy policy.</a>
+    </div>
+  </div>
+
+  <div class="txtstyle" style="height: 130%; background-color: rgba(242,242,242,1); border-bottom: 1px solid rgba(192,192,192,0.5)">
+    <div style="padding-top: 60px">
+      <h1>Making the Internet Work the Way It Should for</h1>
+      <h1>Anything Online</h1>
+      <div id="divider"></div>
+      <h4 style="padding-top: 20px">Cloudflare speeds up and protects millions of websites, APIs, SaaS services, and other properties</h4>
+      <h4>connected to the Internet. Our Anycast technology enables our benefits to scale with every server </h4>
+      <h4>we add to our growing footprint of data centers.</h4>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-md-5 col-md-offset-1">
+          <div id="ftxt" style="position: relative; top: 70px; height: 165px; background: linear-gradient(45deg, rgba(131,118,181,1), rgba(184,119,177,1))">
+            <p style="position: relative; left: 25px; top: 20px; font-size: 18px; font-weight: bold; color: rgba(255,255,255,1); display: inline">
+              PERFORMANCE
+            </p>
+            <div></div>
+            <p style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(255,255,255,1); display: inline">
+              Cloudflare dramatically improves website performance
+            </p>
+            <div class="divi"></div>
+            <p style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(255,255,255,1); display: inline">
+              through our global CDN and web optimization features.
+            </p>
+            <div class="divi"></div>
+            <a href="#" style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(0,0,0,0.3)">Learn more</a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-5">
+          <div id="stxt" style="position: relative; top: 70px; height: 165px; background: linear-gradient(45deg, rgba(119,196,224,1), rgba(132,203,170,1))">
+            <p style="position: relative; left: 25px; top: 20px; font-size: 18px; font-weight: bold; color: rgba(255,255,255,1); display: inline">
+              SECURITY
+            </p>
+            <div></div>
+            <p style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(255,255,255,1); display: inline">
+              Cloudflare’s WAF, DDoS protection, and SSL defend
+            </p>
+            <div class="divi"></div>
+            <p style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(255,255,255,1); display: inline">
+              website owners and their visitors from all types of online
+            </p>
+            <div class="divi"></div>
+            <p style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(255,255,255,1); display: inline">
+              threats.
+            </p>
+            <a href="#" style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(0,0,0,0.3)">Learn more</a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-5 col-md-offset-1" style="margin-top: 30px">
+          <div id="ttxt" style="position: relative; top: 70px; height: 165px; background: linear-gradient(45deg, rgba(129,120,182,1), rgba(118,194,225,1))">
+            <p style="position: relative; left: 25px; top: 20px; font-size: 18px; font-weight: bold; color: rgba(255,255,255,1); display: inline">
+              RELIABILITY
+            </p>
+            <div></div>
+            <p style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(255,255,255,1); display: inline">
+              With over 35% market share, Cloudflare runs the largest,
+            </p>
+            <div class="divi"></div>
+            <p style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(255,255,255,1); display: inline">
+              fastest, and most reliable managed DNS service in the
+            </p>
+            <div class="divi"></div>
+            <p style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(255,255,255,1); display: inline">
+              world.
+            </p>
+            <a href="#" style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(0,0,0,0.3)">Learn more</a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-5" style="margin-top: 30px">
+          <div id="fotxt" style="position: relative; top: 70px; height: 165px; background: linear-gradient(45deg, rgba(246,148,90,1), rgba(255,217,110,1))">
+            <p style="position: relative; left: 25px; top: 20px; font-size: 18px; font-weight: bold; color: rgba(255,255,255,1); display: inline">
+              INSIGHT
+            </p>
+            <div></div>
+            <p style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(255,255,255,1); display: inline">
+              Cloudflare’s network helps identify visitor and bot behavior
+            </p>
+            <div class="divi"></div>
+            <p style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(255,255,255,1); display: inline">
+              that isn’t accessible to conventional analytics technologies.
+            </p>
+            <div class="divi"></div>
+            <a href="#" style="position: relative; left: 25px; top: 25px; font-size: 16px; color: rgba(0,0,0,0.3)">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="vdo" style="position: relative; height: 130%; background-color: rgba(255,255,255,1)">
+    <br><br>
+    <h1 style="text-align: center">Setting Up Cloudflare Is Easy</h1>
+    <br>
+    <div style="text-align: center">
+      <video loop autoplay style="max-width: 100%">
+        <source src="cloudflare-setup.mp4" type="video/mp4">
+      </video>
+    </div>
+    <h5 style="text-align: center; color: rgba(0,0,0,0.5)">Set up a domain in less than 5 minutes. Keep your hosting provider. No code changes required.</h5>
+  </div>
+
+  <div class="sdisplay" style="height: 55%; background: linear-gradient(20deg, rgba(118,196,225,1), rgba(133,203,169,1)); padding-top: 60px">
+    <h1>Cloudflare makes more than 6,000,000 Internet</h1>
+    <h1>properties faster and safer. Join today!</h1>
+    <div id="sedsignupbutton" style="text-align: center; padding-top: 20px">
+      <sgup-button id="ssbutton" v-bind:style="ssgbstyle"></sgup-button>
+    </div>
+  </div>
+
+  <div class="tdisplay" style="height: 85%; background-color: rgba(242,242,242,1); padding-top: 100px">
+    <h3>Cloudflare has incredibly large network and infrastructure to stop</h3>
+    <h3>really large attacks on the DNS system. We just get clean requests</h3>
+    <h3>and never have to deal with malicious traffic or attacks on the DNS</h3>
+    <h3>infrastructure. Pairing security with bandwidth savings and fast </h3>
+    <h3>global DNS response time makes Cloudflare the perfect partner for</h3>
+    <h3>our business.</h3><br><br>
+    <div class="container">
+      <div class="row">
+        <div id="doimg" class="col-xs-12 col-sm-2 col-sm-offset-4">
+          <img src="digital-ocean.png" alt="digital-ocean">
+        </div>
+
+        <div id="dotext" class="col-xs-12 col-sm-4" style="position: relative; bottom: 17px">
+          <h4 style="color: rgba(0,0,0,0.6)">SAM KOTTLER</h4>
+          <h4 style="color: rgba(0,0,0,0.6)">Platform Engineer at DigitalOcean</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="logopart" style="width: 100%; height: 110%; background-color: rgba(255,255,255,1); text-align: center">
+    <br><br><br>
+    <h1 style="text-align: center; color: rgba(0,0,0,0.6)">Trusted By</h1>
+    <a id="trusth" href="#" style="color: rgba(155,187,224,1); font-size: 17px">Read some of our case studies</a>
+    <div class="container-fluid" style="width: 100%; padding-top: 60px">
+      <div class="row" style="text-align: center">
+        <div class="col-xs-6 col-sm-3">
+          <img src="images/logo1.jpg">
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+          <img src="images/logo2.jpg">
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+          <img src="images/logo3.jpg">
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+          <img src="images/logo4.jpg">
+        </div>
+      </div>
+
+      <div class="row" style="text-align: center">
+        <div class="col-xs-6 col-sm-3">
+          <img src="images/logo5.jpg">
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+          <img src="images/logo6.jpg">
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+          <img src="images/logo7.jpg">
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+          <img src="images/logo8.jpg">
+        </div>
+      </div>
+
+      <div class="row" style="text-align: center">
+        <div class="col-xs-6 col-sm-3">
+          <img src="images/logo9.jpg">
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+          <img src="images/logo10.jpg">
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+          <img src="images/logo11.jpg">
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+          <img src="images/logo12.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="slogopart" style="height: 42%; background: linear-gradient(10deg, rgba(129,120,182,1), rgba(118,193,224,1))">
+    <br><br><br>
+    <p style="color: rgba(255,255,255,1); font-size: 40px; text-align: center">Backed by</p><br><br>
+    <div class="container-fluid">
+      <div class="row" style="text-align: center">
+        <div id="test" class="col-xs-12 col-sm-3">
+          <img id="microsoft" src="images/microsoft.svg" width="150"  height="35">
+        </div>
+
+        <div class="col-xs-12 col-sm-3">
+          <img id="google" src="images/google.svg"  width="150" height="35">
+        </div>
+
+        <div class="col-xs-12 col-sm-3">
+          <img id="baidu" src="images/baidu.svg" width="150" height="35">
+        </div>
+
+        <div class="col-xs-12 col-sm-3">
+          <img id="qualcomm" src="images/qualcomm.svg" width="150" height="35">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="foot" style="height: 60%; background-color: rgba(51,51,51,1)">
+    <br><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <ul style="list-style-type: none">
+            <li><p style="color: rgba(173,171,171,1)">Contact Sales</p></li>
+            <li><a href="#">Enterprise Sales</a></li>
+            <li><a href="#">Become a Partner</a></li>
+            <br>
+            <li><a href="#">US:1(888) 99 FLARE</a></li>
+            <li><a href="#">UK:+44(0)20 3514 6970</a></li>
+            <li><a href="#">Singapore:+65 3158 3954</a></li>
+            <li><a href="#">Int'l:+1 (650) 319 8930</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <ul style="list-style-type: none">
+            <li><p style="color: rgba(173,171,171,1)">What We Do</p></li>
+            <li><a href="#">Plans</a></li>
+            <li><a href="#">CDN</a></li>
+            <li><a href="#">DDoS</a></li>
+            <li><a href="#">DNS</a></li>
+            <li><a href="#">Web Security</a></li>
+            <li><a href="#">Web Optimization</a></li>
+            <li><a href="#">Network Map</a></li>
+            <li><a href="#">Ad Acceleration</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <ul style="list-style-type: none">
+            <li><p style="color: rgba(173,171,171,1)">Resources</p></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Video Guides</a></li>
+            <li><a href="#">Technical Resources</a></li>
+            <li><a href="#">Integrations</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">DDoS Learning Center</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <ul style="list-style-type: none">
+            <li><p style="color: rgba(173,171,171,1)">Not a Developer?</p></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">White Papers</a></li>
+            <li><a href="#">Internet Summit</a></li>
+            <li><a href="#">Videos</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <ul style="list-style-type: none">
+            <li><p style="color: rgba(173,171,171,1)">About</p></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Logo</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Trust and Safety</a></li>
+            <br><br>
+            <li><p style="color: rgba(173,171,171,1)">© Cloudflare, Inc.</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="SecondWeb.js"></script>
+
+</body>
+</html>

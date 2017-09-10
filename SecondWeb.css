@@ -1,0 +1,296 @@
+html,body {
+  width: 100%!important;
+  height: 100%!important;
+}
+
+
+.navbar li a {
+  height: 77px!important;
+  padding-top: 35px!important;
+}
+
+
+.ftitle h1 {
+  display: inline!important;
+}
+
+
+#spe {
+  border-bottom: 1px solid rgba(255,255,255,1)!important;
+}
+
+
+.explaintext {
+  position: relative!important;
+  text-align: center!important;
+  top: 35px!important;
+}
+
+
+.explaintext a {
+  font-size: 13px!important;
+  display: inline!important;
+  color: rgba(255,255,255,1)!important;
+}
+
+
+.explaintext a:hover {
+  text-decoration: none!important;
+}
+
+
+.spetext {
+  text-decoration: underline!important;
+}
+
+
+.txtstyle h1 {
+  text-align: center!important;
+}
+
+
+.txtstyle h4 {
+  text-align: center!important;
+}
+
+
+.txtstyle a:hover {
+  text-decoration: none!important;
+}
+
+
+.sdisplay h1 {
+  text-align: center!important;
+  color: rgba(255,255,255,1)!important;
+}
+
+
+.tdisplay h3 {
+  text-align: center!important;
+  color: rgba(0,0,0,0.6)!important;
+}
+
+
+#logopart img {
+  margin-top: 20px!important;
+  margin-bottom: 20px!important;
+}
+
+
+#trusth:hover {
+  text-decoration: none!important;
+}
+
+
+#foot a {
+  color: rgba(57,94,125,1)!important;
+  font-size: 13px!important;
+  line-height: 25px!important;
+}
+
+
+#foot a:hover {
+  color: rgba(144,173,198,1)!important;
+  text-decoration: none!important;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #fstep {
+    height: 150%!important;
+  }
+
+
+  #nbut {
+    height: 80px!important;
+    border-radius: 0!important;;
+    border-style: none!important;
+    margin-top: 0!important;
+    margin-right: 25px!important;
+    margin-bottom: 0!important;
+  }
+  #nbut span{
+    background-color: rgba(255,255,255,1);
+  }
+
+
+  .ftitle h1 {
+    font-size: 20px!important;
+    text-align: center!important;
+    display: block!important;
+  }
+  #spe {
+    border-style: none!important;
+    text-decoration: underline!important;
+  }
+  #sgnav {
+    height: auto!important;
+    background: linear-gradient(90deg, rgba(118,196,225,1), rgba(133,203,169,1))!important;
+  }
+  #sgnform {
+    top: 10px!important;
+  }
+  #sgbfl {
+    text-align: center!important;
+  }
+  #sbutton {
+    top: 0px!important;
+    width: 100%!important;
+  }
+  .explaintext {
+    top: 0px!important;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+  }
+
+
+  .txtstyle {
+    height: auto!important;
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+    padding-bottom: 150px!important;
+  }
+  .txtstyle h1 {
+    display: inline!important;
+    text-align: left!important;
+    line-height: 50px!important;
+  }
+  #divider {
+    padding-bottom: 30px!important;
+  }
+  .txtstyle h4 {
+    display: inline!important;
+    text-align: left!important;
+    line-height: 30px!important;
+  }
+  .divi {
+    display: inline!important;
+  }
+  #ftxt {
+    height: auto!important;
+    padding-right: 50px!important;
+    padding-bottom: 60px!important;
+  }
+  #stxt {
+    height: auto!important;
+    padding-right: 50px!important;
+    padding-bottom: 60px!important;
+  }
+  #ttxt {
+    height: auto!important;
+    padding-right: 50px!important;
+    padding-bottom: 60px!important;
+  }
+  #fotxt {
+    height: auto!important;
+    padding-right: 50px!important;
+    padding-bottom: 60px!important;
+  }
+  .col-xs-12 {
+    margin-top: 5px!important;
+    margin-bottom: 5px!important;
+  }
+
+
+  #vdo {
+    height: auto!important;
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+  }
+  #vdo h1 {
+    line-height: 60px!important;
+  }
+  #vdo h5 {
+    font-size: 18px!important;
+    text-align: left!important;
+    line-height: 40px!important;
+  }
+
+
+  .sdisplay {
+    height: auto!important;
+    text-align: center!important;
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+  }
+  .sdisplay h1 {
+    font-size: 25px!important;
+    display: inline!important;
+    line-height: 40px!important;
+  }
+  #sedsignupbutton {
+    padding-top: 20px!important;
+    padding-bottom: 50px!important;
+  }
+  #ssbutton {
+    width: 50%!important;
+  }
+
+
+  .tdisplay {
+    height: auto!important;
+    text-align: center!important;
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+  }
+  .tdisplay h3 {
+    display: inline!important;
+    line-height: 40px!important;
+  }
+  #doimg {
+    padding-top: 30px!important;
+  }
+  #dotext {
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+  }
+  #dotext h4 {
+    font-size: 15px!important;
+    line-height: 25px!important;
+  }
+
+
+  #logopart {
+    width: 100%!important;
+    height: auto!important;
+    margin-bottom: 50px!important;
+  }
+  #logopart img {
+    width: 100%!important;
+    margin-top: 20px!important;
+    margin-bottom: 20px!important;
+  }
+
+
+  #slogopart {
+    height: auto!important;
+    padding-bottom: 30px!important;
+  }
+  #slogopart p {
+    font-size: 25px!important;
+  }
+  #microsoft {
+    width: 40%!important;
+    height: 10%!important;
+    margin-top: 30px!important;
+    margin-bottom: 30px!important;
+  }
+  #google {
+    width: 40%!important;
+    height: 15%!important;
+    margin-top: 30px!important;
+    margin-bottom: 30px!important;
+  }
+  #baidu {
+    width: 40%!important;
+    height: 15%!important;
+    margin-top: 30px!important;
+    margin-bottom: 30px!important;
+  }
+  #qualcomm {
+    width: 40%!important;
+    height: 10%!important;
+    margin-top: 30px!important;
+    margin-bottom: 30px!important;
+  }
+}
